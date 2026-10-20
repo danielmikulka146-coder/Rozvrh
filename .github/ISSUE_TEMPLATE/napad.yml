@@ -1,0 +1,11 @@
+name: Nápad
+description: Co by aplikace mohla umět nebo dělat jinak.
+labels: ["nápad"]
+body:
+  - type: textarea
+    id: napad
+    attributes:
+      label: Nápad
+      description: Co bys chtěl a k čemu by ti to bylo.
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+# Do repa patří jen dokumentace; APK jde do vydání (Releases), ne do gitu.
+*.apk
+*.aab
+*.jks
+*.keystore

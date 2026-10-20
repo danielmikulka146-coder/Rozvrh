@@ -1,0 +1,43 @@
+name: Chyba
+description: Něco v aplikaci nefunguje nebo spadla.
+labels: ["chyba"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Díky za nahlášení! **Nepiš sem heslo ani osobní údaje** (známky, jména, obsah zpráv).
+        Na snímcích obrazovky je zakryj.
+  - type: textarea
+    id: co
+    attributes:
+      label: Co se stalo
+      description: Co jsi čekal a co se místo toho stalo.
+    validations:
+      required: true
+  - type: textarea
+    id: kroky
+    attributes:
+      label: Jak se k tomu dostat
+      description: Postup krok za krokem, ať to jde zopakovat.
+      placeholder: |
+        1. Otevřu Rozvrh
+        2. Ťuknu na …
+        3. …
+  - type: input
+    id: verze
+    attributes:
+      label: Verze aplikace
+      description: Nastavení → O aplikaci.
+      placeholder: 1.0 Beta 1
+    validations:
+      required: true
+  - type: input
+    id: telefon
+    attributes:
+      label: Telefon a verze Androidu
+      placeholder: Honor 200, Android 16
+  - type: input
+    id: styl
+    attributes:
+      label: Styl vzhledu
+      description: Když jde o vzhled (Výchozí, Plakát, Vaporwave jádro, Japonský, Belle Époque).
