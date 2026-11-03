@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zásady ochrany osobních údajů – aplikace Rozvrh</title>
+<meta name="description" content="Jak aplikace Rozvrh zachází s osobními údaji.">
+<style>
+  :root { color-scheme: light dark; --bg: #fbfaf8; --fg: #1d1b19; --muted: #5f5a54; --accent: #2f5d8a; --rule: #e4e0da; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161514; --fg: #ece8e3; --muted: #a9a29a; --accent: #8db7e0; --rule: #2e2b28; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4rem; }
+  h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: .4rem; }
+  .meta { color: var(--muted); }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Zásady ochrany osobních údajů – aplikace Rozvrh</h1>
+<p class="meta"><em>Platné od: 3. 11. 2026</em></p>
+<p>Rozvrh je neoficiální aplikace pro žáky škol, které používají EduPage. Není spojená s EduPage ani se společností asc Applied Software Consultants. Autory jsou Daniel Mikulka, Filip Dleštík a Tomáš Rachůnek, kontakt: <a href="mailto:danielmikulka146@gmail.com">danielmikulka146@gmail.com</a>.</p>
+<h2>Shrnutí</h2>
+<ul>
+  <li>Aplikace nemá vlastní server. Data se stahují přímo z EduPage tvé školy (a ze Strava.cz, když se přihlásíš do jídelny) do telefonu.</li>
+  <li>Přihlašovací údaje i stažená data jsou uložená jen v telefonu, šifrovaně.</li>
+  <li>Aplikace neobsahuje reklamy ani vlastní analytiku a data nikomu neprodává.</li>
+  <li>Odhlášením z aplikace se smaže všechno, co aplikace k účtu uložila.</li>
+</ul>
+<h2>Jaká data aplikace zpracovává a proč</h2>
+<p><strong>Přihlašovací údaje k EduPage</strong> (jméno nebo e-mail a heslo). Slouží k přihlášení do EduPage a k tichému přihlášení, když vyprší relace. Heslo je uložené šifrovaně klíčem z Android Keystore a odesílá se jen do EduPage tvé školy.</p>
+<p><strong>Data z EduPage</strong> (rozvrh a suplování, známky, docházka a omluvenky, úkoly a písemky, zprávy, poplatky v ePeněžence, jméno, třída). Aplikace je stahuje z EduPage, aby je mohla zobrazit, a ukládá si šifrovanou kopii v telefonu, aby fungovala i bez připojení. Na server autorů se nic neposílá.</p>
+<p><strong>Co do EduPage zapisuješ ty.</strong> Odpovědi na úkoly (včetně fotek a souborů, které k nim přidáš), komentáře, zprávy a omluvenky aplikace odešle do EduPage, jen když je výslovně odešleš.</p>
+<p><strong>Přihlášení počítače QR kódem.</strong> Když naskenuješ QR kód z přihlašovací stránky EduPage na počítači, aplikace ho odešle do EduPage tvé školy, aby tam přihlášení potvrdila.</p>
+<p><strong>Jídelna ve Strava.cz (volitelné).</strong> Když se v aplikaci přihlásíš do jídelny, odešle se číslo jídelny, uživatelské jméno a heslo do Strava.cz. Aplikace pak ze Strava.cz stahuje jídelníček, tvoje objednávky a stav konta. Objednávku nebo její zrušení odešle jen po tvém potvrzení. Přihlašovací údaje, přihlášení a stažená data jsou uložená v telefonu šifrovaně.</p>
+<p><strong>ePeněženka a QR Platba.</strong> Aplikace ukáže poplatky z EduPage a k platbě vytvoří QR Platbu přímo v telefonu. Do banky ji předáš sám (sdílením, uložením obrázku nebo souboru). Aplikace sama nic neplatí a k tvému bankovnímu účtu nemá přístup.</p>
+<p><strong>Ochrana účtu PINem nebo otiskem.</strong> PIN se ověřuje v telefonu. Otisk prstu nebo obličej ověřuje systém Android; aplikace se dozví jen to, jestli ověření proběhlo.</p>
+<p><strong>Kontakty na vyučující (jen SPŠ Zlín).</strong> Veřejný seznam z webu školy spszl.cz se stáhne a uloží šifrovaně v telefonu.</p>
+<p><strong>Tisk ve škole (jen SPŠ Zlín).</strong> Upravené PDF zůstává v telefonu. Aplikace ho předá do Gmailu nebo Outlooku a e-mail odešleš ty ze svého školního účtu. Aplikace k e-mailovému účtu přístup nemá.</p>
+<p><strong>Zpětná vazba (volitelné).</strong> Tlačítko zpětné vazby otevře v prohlížeči formulář Google autorů aplikace (před prvním otevřením se aplikace zeptá). Aplikace do něj předvyplní jen verzi aplikace, verzi Androidu a model telefonu. Formulář vyžaduje přihlášení účtem Google, e-mail ale nesbírá; jméno tvého účtu Google autoři uvidí jen u obrázku, pokud nějaký nahraješ. Kontakt uvedeš, jen když chceš, abychom se ti ozvali. Odeslání je na tobě, aplikace sama nic neodesílá. Odpovědi vidí jen autoři aplikace a používají je jen k jejímu vylepšení.</p>
+<p><strong>Ovladač minihry Závody (jen ve škole, volitelné).</strong> Když se k minihře připojíš naskenováním QR kódu, aplikace pošle přes Bluetooth zařízení u školní televize tvou přezdívku ve hře, celé jméno z EduPage a náhodné ID hráče. Přenos přes Bluetooth není šifrovaný. Nic jiného se nepřenáší a bez připojení ke hře se nepoužívá.</p>
+<p><strong>Čtečka QR kódů.</strong> Využívá skener ze služeb Google Play. Kód se rozpoznává v telefonu; služby Google Play mohou podle dokumentace Googlu odesílat Googlu diagnostické údaje (model zařízení, verze systému a aplikace, výkon skeneru), nikoli obsah kódu ani obraz z fotoaparátu. Viz <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a>.</p>
+<p><strong>Widgety a oznámení</strong> se počítají v telefonu z uložených dat.</p>
+<p><strong>Oprávnění.</strong> Oznámení (připomínky a změny v rozvrhu), přesné budíky a spuštění po zapnutí telefonu (aby oznámení přišla včas), Bluetooth (jen ovladač Závodů; na Androidu 9–11 systém kvůli hledání Bluetooth zařízení vyžaduje oprávnění k poloze, aplikace polohu nečte ani neukládá), biometrika (jen ochrana účtu) a internet.</p>
+<h2>Komu se data předávají</h2>
+<ul>
+  <li><strong>EduPage tvé školy</strong> (provozuje asc Applied Software Consultants) – přihlášení, čtení dat a zápisy, které odešleš. Na zpracování údajů v EduPage se vztahují zásady tvé školy a EduPage.</li>
+  <li><strong>Strava.cz</strong> – jen když se přihlásíš do jídelny: přihlášení, jídelníček, objednávky a konto. Na zpracování údajů ve Strava.cz se vztahují zásady jídelny a Strava.cz.</li>
+  <li><strong>Web SPŠ Zlín</strong> – jen stažení veřejného seznamu kontaktů.</li>
+  <li><strong>Google</strong> – diagnostika skeneru QR kódů ve službách Google Play (viz výše).</li>
+  <li><strong>Google</strong> (Formuláře) – jen když odešleš formulář zpětné vazby: co do něj napíšeš nebo nahraješ a předvyplněná verze aplikace, Androidu a model telefonu.</li>
+</ul>
+<p>Nikomu jinému aplikace data nepředává.</p>
+<h2>Uložení, záloha a smazání</h2>
+<ul>
+  <li>Data jsou uložená jen v telefonu, šifrovaně, a nezálohují se (ani do zálohy Androidu).</li>
+  <li>Odhlášením účtu v Nastavení se smažou přihlašovací údaje i všechna data, která aplikace k účtu uložila (včetně jídelny). Odinstalováním aplikace se smaže všechno.</li>
+  <li>Data uložená přímo v EduPage spravuje tvoje škola, data ve Strava.cz tvoje jídelna, ne autoři aplikace.</li>
+</ul>
+<h2>Děti</h2>
+<p>Aplikace je určená žákům středních škol (od 13 let). Autoři sami žádné osobní údaje neshromažďují.</p>
+<h2>Kontakt</h2>
+<p>S dotazy k těmto zásadám piš na <a href="mailto:danielmikulka146@gmail.com">danielmikulka146@gmail.com</a>.</p>
+<h2>Změny</h2>
+<p>Změny těchto zásad budou zveřejněné na této stránce s novým datem platnosti.</p>
+</main>
+</body>
+</html>
