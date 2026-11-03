@@ -46,6 +46,7 @@ Co je nového, je v [CHANGELOG.md](CHANGELOG.md) a po aktualizaci i přímo v ap
 - Aplikace nemá vlastní server a nic neposílá autorům. Komunikuje jen s EduPage tvé školy, se Strava.cz
   (když se do jídelny přihlásíš) a u SPŠ Zlín se stránkami školy (kontakty na vyučující).
 - Zpětná vazba z aplikace vede na formulář, který vyplňuješ sám.
+- Podrobně v [zásadách ochrany osobních údajů](https://danielmikulka146-coder.github.io/Rozvrh/soukromi/).
 
 ## Chyby a nápady
 
@@ -54,6 +55,6 @@ Do hlášení nepiš heslo ani osobní údaje (známky, jména, zprávy) a na sn
 
 ## Autoři a licence
 
-© 2026 Filip Dleštík a Daniel Mikulka. Aplikace je zdarma pro osobní použití, podmínky jsou v [LICENSE](LICENSE).
+© 2026 Filip Dleštík, Daniel Mikulka a Tomáš Rachůnek. Aplikace je zdarma pro osobní použití, podmínky jsou v [LICENSE](LICENSE).
 Knihovny a písma třetích stran mají vlastní licence; jejich seznam a texty jsou v aplikaci
 (Nastavení → O aplikaci).
